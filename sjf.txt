@@ -1,0 +1,47 @@
+// JavaScript program for implementation of SJF
+
+
+function sjf() {
+
+  //sorting using arrival time
+  let objCollection = [];
+
+  ////Time Complexity = O(nlogn) where n = number of process
+  //Making an object to be sorted later.
+  for (var x = 0; x < arrivalTime.length; x++)
+    objCollection.push({ A: arrivalTime[x], B: burstTime[x], C: processID[x] });
+
+  //Sorting begins with its corresponding Arrival Time and Burst Time
+  //No interchanging of partner happens
+  objCollection.sort(function (a, b) {
+    return a.A - b.A;
+  });
+
+
+  //sorting of burst time
+  for (let i = 0; i < n; i++) {  //time complexity for this loop is O(n)
+    pos = i;
+    for (let j = i + 1; j < n; j++) {  //time complexity for this loop is O(n)
+      if (burstTime[j] < burstTime[pos]) {
+        pos = j;
+      }
+    }
+
+    // Total time complexity is O(n^2) where n is the number of processes
+    //swapping for burst time
+    temp = burstTime[i];
+    burstTime[i] = burstTime[pos];
+    burstTime[pos] = temp;
+
+    //swapping for process id
+    temp = p[i];
+    p[i] = p[pos];
+    p[pos] = temp;
+
+  }
+
+  // calling function for the calculating waiting time, turn around time and their average 
+  findWaitingTime();
+  findTurnAroundTime();
+  averagetime();
+}

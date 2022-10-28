@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulator</title>
+
+    <link rel="stylesheet" href="cpu.css">
+    <link rel="stylesheet" href="tab.css">
+    <link rel="stylesheet" href="definitions.css">
+    <link rel="stylesheet" href="table.css">
+</head>
+<body>
+    <section class="container_docs" data-aos="zoom-in-up" id="sjf">
+    
+        <h1>2) Shortest Job First</h1>
+        <p>SJF is a full form of (Shortest job first) is a scheduling algorithm in which the process with the shortest
+            execution time should be selected for execution next. This scheduling method can be preemptive or
+            non-preemptive. It significantly reduces the average waiting time for other processes awaiting
+            execution.<br></p>
+
+        <h4>
+            <li>Advantages</li>
+        </h4>
+        <p>1. Shortest jobs are favored.<br><br>
+            2. It is provably optimal, in that it gives the minimum average waiting time for a given set of processes.
+        </p>
+
+        <h4>
+            <li>Disadvantages</li>
+        </h4>
+        <p>1. SJF may cause starvation, if shorter processes keep coming. This problem is solved by aging..<br><br>
+            2. It cannot be implemented at the level of short term CPU scheduling.<br></p>
+            <img src="sjf1.png">
+           
+        <br>
+        <hr>
+        <button> <a href="./simulator.html"  class="btn_1" onclick="gotoSimulator();">Go to Simulator</button> </a>
+        </hr>
+        <br>
+        
+    </section>
+</body>
+</html>

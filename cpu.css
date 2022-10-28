@@ -1,0 +1,115 @@
+body{
+    font-family:cursive;
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=number], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.rr button{
+    padding: 20px;
+margin: 30px;
+display: inline-block;
+text-align: center;
+text-decoration: none;
+background-color: yellow;
+color: white;
+width: 200px;
+height: 100px;
+font-size: 20px;
+
+}
+.block > h1{
+    font-size: 3em;
+}
+.rr button a{
+    text-decoration: none;
+    color: black;
+}
+.rr a:hover{
+    color:#45a049;
+    
+}
+
+.sjf button{
+    padding: 20px;
+margin: 30px;
+display: inline-block;
+text-align: center;
+text-decoration: none;
+background-color: rgb(177, 81, 81);
+color: white;
+width: 200px;
+height: 100px;
+font-size: 20px;
+
+}
+.sjf button a{
+    text-decoration: none;
+    color:black
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+}
+.SJF a:hover{
+    color:#45a049;
+}
+
+.SRTF button{
+    padding: 20px;
+margin: 30px;
+display: inline-block;
+text-align: center;
+text-decoration: none;
+background-color: lightblue;
+color: white;
+width: 200px;
+height: 100px;
+font-size: 20px;
+
+}
+.SRTF button a{
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+}
+.SRTF a:hover{
+    color:#45a049;
+}
+
+
+input[type=button] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    margin: 14px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background-color: #45a049;
+}
+
+.block {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}

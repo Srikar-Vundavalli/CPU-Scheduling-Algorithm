@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulator</title>
+
+   
+    <link rel="stylesheet" href="definitions.css">
+    
+</head>
+<body>
+    <section class="container_docs" data-aos="zoom-in-up" id="RR">
+        <h1>1) Round-Robin Scheduling</h1>
+        <p>Round robin is the oldest, simplest scheduling algorithm. The name of this algorithm comes from the
+            round-robin principle, where each person gets an equal share of something in turn. It is mostly used for
+            scheduling algorithms in multitasking. This algorithm method helps for starvation free execution of
+            processes.It is pre-emptive algorithm
+            The CPU is shifted to next process after fixed interval of time called time quantum.
+            The process that is preempted is added to the end of the queue.<br><br></p>
+
+
+        <h4>
+            <li>Advantages</li>
+        </h4>
+        <p>1. Every process gets an equal share of the CPU.<br><br>
+            2. RR is cyclic in nature, so there is no starvation.</p>
+
+        <h4>
+            <li>Disadvantages</li>
+        </h4>
+        <p>1. Setting the quantum too short, increases the overhead and lowers the CPU efficiency, but setting it too
+            long may cause poor response to short processes.<br><br>
+            2. Average waiting time under the RR policy is often long.<br>
+        </p>
+        <img src="Round-Robin-Scheduling.png">
+        <br>
+        <hr>
+        <button> <a href="./simulator.html"  class="btn_1" onclick="gotoSimulator();">Go to Simulator</button> </a>
+        </hr>
+        <br>
+    </section>
+</body>
+</html>
